@@ -102,6 +102,18 @@ function media_service_setup() {
 }
 add_action( 'after_setup_theme', 'media_service_setup' );
 
+
+function mytheme_enqueue_scripts() {
+    // Enqueue the custom JavaScript file
+    wp_enqueue_script('mytheme-custom-js', get_template_directory_uri() . '/custom/js/custom.js', array(), '1.0.0', true);
+
+    // Enqueue the custom CSS file
+    wp_enqueue_style('mytheme-custom-style', get_template_directory_uri() . '/custom/style.css', array(), '1.0.0', 'all');
+}
+
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
+
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
