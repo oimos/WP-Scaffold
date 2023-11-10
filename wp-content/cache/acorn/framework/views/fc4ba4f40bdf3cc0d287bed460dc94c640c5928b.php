@@ -1,0 +1,2 @@
+<?php (dynamic_sidebar('sidebar-primary')); ?>
+<?php /**PATH /Users/Shinya.takahashi/Local Sites/media-service/app/public/wp-content/themes/media-service/resources/views/sections/sidebar.blade.php ENDPATH**/ ?>

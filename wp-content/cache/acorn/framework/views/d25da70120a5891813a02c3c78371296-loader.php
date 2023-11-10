@@ -1,0 +1,2 @@
+<?= \Roots\view('partials.comments', $data ?? get_defined_vars())->render(); ?>
+<?php /**PATH /Users/Shinya.takahashi/Local Sites/media-service/app/public/wp-content/themes/media-service/resources/views/partials/comments.blade.php ENDPATH**/ ?>
