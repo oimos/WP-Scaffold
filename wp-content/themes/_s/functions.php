@@ -1,10 +1,10 @@
 <?php
 /**
- * Media-Service functions and definitions
+ * media-service functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Media-Service
+ * @package media-service
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -49,7 +49,7 @@ function media_service_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'Media-Service' ),
+			'menu-1' => esc_html__( 'Primary', 'media-service' ),
 		)
 	);
 
@@ -122,9 +122,9 @@ add_action( 'after_setup_theme', 'media_service_content_width', 0 );
 function media_service_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'Media-Service' ),
+			'name'          => esc_html__( 'Sidebar', 'media-service' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'Media-Service' ),
+			'description'   => esc_html__( 'Add widgets here.', 'media-service' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

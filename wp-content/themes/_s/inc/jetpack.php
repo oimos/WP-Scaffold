@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Media-Service
+ * @package media-service
  */
 
 /**

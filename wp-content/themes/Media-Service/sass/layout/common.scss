@@ -1,0 +1,29 @@
+// @use "../sass-utils/mixin" as mixin;
+@use "../sass-utils/mixin" as mixin;
+
+.site-main {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mixin.xs {
+    padding: 0 10px;
+  }
+
+  @include mixin.sm {
+    padding: 0 20px;
+  }
+
+  @include mixin.md {
+    padding: 0 50px;
+  }
+
+  @include mixin.lg {
+    padding: 0 100px;
+  }
+
+  @include mixin.xl {
+    padding: 0 200px;
+  }
+}

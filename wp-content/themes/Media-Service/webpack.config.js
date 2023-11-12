@@ -1,5 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -28,12 +30,25 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
     ]
+  },
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.css'
+    }),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      proxy: 'http://media-service.local',
+      files: [
+        '**/*.php',
+        'custom/css/*.css',
+        'custom/js/*.js',
+      ]
     })
   ],
   mode: 'development' // or 'production'

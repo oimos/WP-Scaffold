@@ -1,3 +1,8 @@
+@use "./base";
+@use "./layout";
+
+// https://nulab.com/ja/blog/nulab/stop-to-use-import/
+
 .header {
-  border: 4px solid blue;
+  border: 4px solid green;
 }

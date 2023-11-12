@@ -16,14 +16,13 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
 		<?php
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text><?php single_post_title(); ?></h1>
 				</header>
 				<?php
 			endif;
@@ -53,5 +52,10 @@ get_header();
 	</main><!-- #main -->
 
 <?php
+echo '------ Side bar -----';
 get_sidebar();
+echo '------ /Side bar -----';
+
+echo '------ Footer -----';
 get_footer();
+echo '------ /Footer -----';

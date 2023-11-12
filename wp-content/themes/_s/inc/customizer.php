@@ -1,8 +1,8 @@
 <?php
 /**
- * Media-Service Theme Customizer
+ * media-service Theme Customizer
  *
- * @package Media-Service
+ * @package media-service
  */
 
 /**

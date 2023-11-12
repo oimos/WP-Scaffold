@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Media-Service
+ * @package media-service
  */
 
 ?>
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'Media-Service' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'media-service' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Media-Service' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'media-service' ),
 				'after'  => '</div>',
 			)
 		);
