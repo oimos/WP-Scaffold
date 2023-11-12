@@ -1,0 +1,90 @@
+/* Sticky header styles */
+.site-header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Hamburger menu button styles */
+.menu-toggle {
+  display: none; /* Hidden by default, shown in mobile view */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:last-child {
+  margin-bottom: 0;
+}
+
+/* Navigation styles */
+.main-navigation {
+  text-align: center;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-navigation li {
+  margin: 0 1em;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5em 1em;
+}
+
+/* Responsive navigation styles */
+@media (max-width: 768px) {
+  // .main-navigation ul {
+  //   flex-direction: column;
+  //   display: none; /* Hidden by default */
+  // }
+
+  // .main-navigation.toggled ul {
+  //   display: flex; /* Shown when menu is toggled */
+  // }
+  /* Initial state of the menu */
+  /* Initial state of the menu */
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu button in mobile view */
+  }
+}
+
+#masthead {
+  transition: transform 0.3s;
+  will-change: transform; /* パフォーマンスの最適化 */
+}
+
+.nav-up {
+  transform: translateY(-100%); /* メニューを上にスライドさせて隠す */
+}
+
+.nav-down {
+  transform: translateY(0); /* メニューを表示 */
+}
