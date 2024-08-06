@@ -109,8 +109,8 @@ function mytheme_enqueue_scripts() {
 	// Enqueue the custom JavaScript file.
 	wp_enqueue_script( 'mytheme-custom-js', get_template_directory_uri() . '/custom/js/custom.js', array(), '1.0.0', true ); // Ensure script is enqueued.
 
-	// Enqueue the custom CSS file.
-	wp_enqueue_style( 'mytheme-custom-style', get_template_directory_uri() . '/custom/style.css', array(), '1.0.0', 'all' ); // Ensure style is enqueued.
+	// // Enqueue the custom CSS file.
+	// wp_enqueue_style( 'mytheme-custom-style', get_template_directory_uri() . '/custom/style.css', array(), '1.0.0', 'all' ); // Ensure style is enqueued.
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_scripts' );
 
@@ -152,6 +152,9 @@ add_action( 'widgets_init', 'media_service_widgets_init' );
 function media_service_scripts() {
 	wp_enqueue_style( 'media-service-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'media-service-style', 'rtl', 'replace' );
+
+  // Enqueue the custom CSS file.
+	wp_enqueue_style( 'mytheme-custom-style', get_template_directory_uri() . '/custom/style.css', array(), '1.0.0', 'all' ); // Ensure style is enqueued.
 
 	wp_enqueue_script( 'media-service-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
