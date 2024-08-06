@@ -238,3 +238,38 @@ function media_service_add_editor_styles() {
   add_editor_style( 'style-editor.css' ); // 'style-editor.css' はエディタースタイルのCSSファイルです。
 }
 add_action( 'after_setup_theme', 'media_service_add_editor_styles' );
+
+
+function custom_logo_width_height($html) {
+  // Set your desired width and height
+  $width = 470;
+  $height = 48;
+
+  // Replace the width and height attributes
+  $html = preg_replace('/width="\d+"/', 'width="' . $width . '"', $html);
+  $html = preg_replace('/height="\d+"/', 'height="' . $height . '"', $html);
+
+  return $html;
+}
+add_filter('get_custom_logo', 'custom_logo_width_height');
+
+
+function add_class_to_last_menu_item($items, $args) {
+  if (!empty($items)) {
+      $items[count($items)]->classes[] = 'last-menu-item';
+  }
+  return $items;
+}
+add_filter('wp_nav_menu_objects', 'add_class_to_last_menu_item', 10, 2);
+
+function enqueue_noto_sans() {
+  wp_enqueue_style( 'noto-sans', 'ttps://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Noto+Sans+JP:wght@100..900&display=swap', array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_noto_sans' );
+
+function enqueue_ibm_plex_sans_jp() {
+  wp_enqueue_style( 'ibm-plex-sans-jp', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap', array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_ibm_plex_sans_jp' );
+
+

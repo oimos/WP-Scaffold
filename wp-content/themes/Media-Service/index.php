@@ -16,46 +16,50 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+
+
+    <p style="text-align: center;font-size:32px;line-height:45px;font-family: 'Noto Sans JP', sans-serif;margin-top:80px;">Coming soon.</p>
 		<?php
-		if ( have_posts() ) :
+		// if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		// 	if ( is_home() && ! is_front_page() ) :
+		 		?>
+		 		<!-- <header>
+		 			<h1 class="page-title screen-reader-text><?php //single_post_title(); ?></h1>
+		 		</header> -->
+		 		<?php
+		// 	endif;
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		// 	/* Start the Loop */
+		// 	while ( have_posts() ) :
+		// 		the_post();
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+		// 		/*
+		// 		 * Include the Post-Type-specific template for the content.
+		// 		 * If you want to override this in a child theme, then include a file
+		// 		 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+		// 		 */
+		// 		get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+		// 	endwhile;
 
-			the_posts_navigation();
+		// 	the_posts_navigation();
 
-		else :
+		// else :
 
-			get_template_part( 'template-parts/content', 'none' );
+		// 	get_template_part( 'template-parts/content', 'none' );
 
-		endif;
+		// endif;
 		?>
 
+    <br><br><br><br><br>
 	</main><!-- #main -->
 
 <?php
-echo '------ Side bar -----';
-get_sidebar();
-echo '------ /Side bar -----';
+// echo '------ Side bar -----';
+// get_sidebar();
+// echo '------ /Side bar -----';
 
-echo '------ Footer -----';
+// echo '------ Footer -----';
 get_footer();
-echo '------ /Footer -----';
+// echo '------ /Footer -----';

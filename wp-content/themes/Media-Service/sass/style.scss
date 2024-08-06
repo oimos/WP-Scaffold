@@ -1,12 +1,16 @@
+@use "./sass-utils/mixin";
 @use "./base";
 @use "./layout";
+@use "./layout/header";
+@use "./layout/footer";
 @use "./components";
 
 // https://nulab.com/ja/blog/nulab/stop-to-use-import/
 
-h1 {
-  border: 4px solid yellow;
+body {
+  background: #eeeeee;
 }
-.header {
-  border: 4px solid green;
+
+.site-main {
+  height: calc(100vh - 259px - 78px);
 }

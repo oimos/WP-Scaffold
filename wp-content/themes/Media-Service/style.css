@@ -648,7 +648,7 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-.main-navigation {
+/* .main-navigation {
   display: block;
   width: 100%;
 }
@@ -678,12 +678,12 @@ textarea {
 .main-navigation ul ul li.focus > ul {
   display: block;
   left: auto;
-}
+} */
 
-.main-navigation ul ul a {
+/* .main-navigation ul ul a {
   width: 200px;
-}
-
+} */
+/*
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
@@ -696,10 +696,10 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
-}
+} */
 
 /* Small menu. */
-.menu-toggle,
+/* .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
@@ -737,11 +737,11 @@ textarea {
 .post-navigation .nav-next {
   text-align: end;
   flex: 1 0 50%;
-}
+} */
 
 /* Posts and pages
 --------------------------------------------- */
-.sticky {
+/* .sticky {
   display: block;
 }
 
@@ -763,27 +763,27 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
-}
+} */
 
 /* Comments
 --------------------------------------------- */
-.comment-content a {
+/* .comment-content a {
   word-wrap: break-word;
 }
 
 .bypostauthor {
   display: block;
-}
+} */
 
 /* Widgets
 --------------------------------------------- */
-.widget {
+/* .widget {
   margin: 0 0 1.5em;
 }
 
 .widget select {
   max-width: 100%;
-}
+} */
 
 /* Media
 --------------------------------------------- */
@@ -803,7 +803,7 @@ textarea {
 
 /* Captions
 --------------------------------------------- */
-.wp-caption {
+/* .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
@@ -820,11 +820,11 @@ textarea {
 
 .wp-caption-text {
   text-align: center;
-}
+} */
 
 /* Galleries
 --------------------------------------------- */
-.gallery {
+/* .gallery {
   margin-bottom: 1.5em;
   display: grid;
   grid-gap: 1.5em;
@@ -870,7 +870,7 @@ textarea {
 
 .gallery-caption {
   display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Plugins
@@ -880,15 +880,15 @@ textarea {
 --------------------------------------------- */
 
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
-.infinite-scroll .posts-navigation,
+/* .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   display: none;
-}
+} */
 
 /* Re-display the Theme Footer when Infinite Scroll has reached its end. */
-.infinity-end.neverending .site-footer {
+/* .infinity-end.neverending .site-footer {
   display: block;
-}
+} */
 
 /*--------------------------------------------------------------
 # Utilities
@@ -898,7 +898,7 @@ textarea {
 --------------------------------------------- */
 
 /* Text meant only for screen readers. */
-.screen-reader-text {
+/* .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -929,7 +929,7 @@ textarea {
   top: 5px;
   width: auto;
   z-index: 100000;
-}
+} */
 
 /* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
@@ -938,20 +938,16 @@ textarea {
 
 /* Alignments
 --------------------------------------------- */
-.alignleft {
-  /*rtl:ignore*/
+/* .alignleft {
   float: left;
 
-  /*rtl:ignore*/
   margin-right: 1.5em;
   margin-bottom: 1.5em;
 }
 
 .alignright {
-  /*rtl:ignore*/
   float: right;
 
-  /*rtl:ignore*/
   margin-left: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -962,4 +958,4 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-}
+} */
